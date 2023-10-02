@@ -19,14 +19,13 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework import permissions
-from drf_yasg2.views import get_schema_view
-from drf_yasg2 import openapi
-
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
 schema_view = get_schema_view( # new
     openapi.Info(
         title="Person API",
         default_version="v1",
-        description="A simple REST API that performs CRUD operations on person model",
+        description="An api that for saving video recordings",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="taiyemusa1582@gmail.com"),
         license=openapi.License(name="BSD License"),

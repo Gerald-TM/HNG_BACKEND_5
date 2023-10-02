@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "videoapi",
     "rest_framework",
     'drf_yasg2',
+    "drf_yasg",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
